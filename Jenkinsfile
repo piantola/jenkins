@@ -3,7 +3,7 @@ pipeline {
     
     parameters {
         booleanParam(name: 'Execute_Stage_2',
-                     defaultValue: true,
+                     defaultValue: false,
                      description: 'Execute Stage 2')
     }
     
