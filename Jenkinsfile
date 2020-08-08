@@ -17,6 +17,7 @@ pipeline {
         
         stage('Stage 2') {
             steps {
+                echo "Parameter Execute_Stage_2: ${params.Execute_Stage_2}"
                 echo 'Stage 2 done!' 
             }
         }
