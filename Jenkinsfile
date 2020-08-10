@@ -22,7 +22,7 @@ pipeline {
                     return params.Execute_Stage_2
                 }
                 not {
-                    AllOf {
+                    allOf {
                         branch 'master'
                     }
                 }
