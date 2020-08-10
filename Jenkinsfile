@@ -23,7 +23,7 @@ pipeline {
                 }
                 not {
                     allOf {
-                        branch 'master'
+                        branch 'develop'
                     }
                 }
             }
