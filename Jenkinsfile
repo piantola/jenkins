@@ -21,6 +21,11 @@ pipeline {
                 expression {
                     return params.Execute_Stage_2
                 }
+                not {
+                    AllOf {
+                        branch 'master'
+                    }
+                }
             }
             steps {
                 echo 'Stage 2 done!' 
