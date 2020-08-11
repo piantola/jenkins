@@ -23,8 +23,8 @@ pipeline {
                     return params.Execute_Stage_2
                 }
                 not {
-                    allOf {
-                        branch 'develop'
+                    expression {
+                        return params.BRANCH == "origin\develop"
                     }
                 }
             }
