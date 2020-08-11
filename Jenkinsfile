@@ -24,7 +24,7 @@ pipeline {
                 }
                 not {
                     expression {
-                        return params.BRANCH == "origin\develop"
+                        return params.BRANCH == "origin/develop"
                     }
                 }
             }
