@@ -12,6 +12,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo "Parameter Execute_Stage_2: ${params.Execute_Stage_2}"
+                echo "Branch name: ${params.BRANCH}"
                 echo 'Stage 1 done!' 
             }
         }
