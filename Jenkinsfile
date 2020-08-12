@@ -5,6 +5,9 @@ pipeline {
         booleanParam(name: 'Execute_Stage_2',
                      defaultValue: false,
                      description: 'Execute Stage 2')
+        choice(name: 'CHOICE',
+               choice: ['master', 'release', 'develop'],
+               description: ' blah, blah, blah')
     }
     
     stages {
@@ -12,6 +15,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo "Parameter Execute_Stage_2: ${params.Execute_Stage_2}"
+                echo "CHOICE: ${params.CHOICE}"
                 echo "Branch name: ${params.BRANCH}"
                 echo 'Stage 1 done!' 
             }
