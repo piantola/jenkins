@@ -6,7 +6,7 @@ pipeline {
                      defaultValue: false,
                      description: 'Execute Stage 2')
         choice(name: 'CHOICE',
-               choice: ['master', 'release', 'develop'],
+               choices: ['master', 'release', 'develop'],
                description: ' blah, blah, blah')
     }
     
