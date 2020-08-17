@@ -1,6 +1,8 @@
 pipeline {
     agent any
-    
+    environment {
+        BRANCH = ''
+    }
     parameters {
         booleanParam(name: 'Execute_Stage_2',
                      defaultValue: false,
@@ -11,9 +13,11 @@ pipeline {
         
         stage('Stage 1') {
             steps {
+                BRANCH = env.GIT_BRANCH
                 echo "Parameter Execute_Stage_2: ${params.Execute_Stage_2}"
                 echo "Branch name: ${params.BRANCH}"
                 echo "GIT BRANCH: ${env.GIT_BRANCH}"
+                echo "BRANCH: ${env.BRANCH}"
                 echo 'Stage 1 done!' 
             }
         }
