@@ -21,7 +21,7 @@ pipeline {
         stage('Stage 2') {
             when {
                 expression {
-                   return params.Execute_Stage_2 && params.BRANCH != "origin/develop
+                   return params.Execute_Stage_2 && params.BRANCH != "origin/develop"
                 }
             }
             steps {
