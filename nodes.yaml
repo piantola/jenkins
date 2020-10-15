@@ -1,0 +1,9 @@
+Piantola2.local:
+  description: Maquina Windows
+  hostname: 192.168.0.22
+  nodename: Piantola2.local
+  osArch: x86_64
+  osFamily: Windows
+  osName: Windows 8
+  osVersion: 8
+  tags: 'vini'
